@@ -1,14 +1,18 @@
 macro_ctrl_alt: macro_ctrl_alt {
 compatible = "zmk,behavior-hold-tap";
 label = "macro_ctrl_alt";
+flavor = "hold-preferred";
 #binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LEFT_ALT>;
+tapping-term-ms = <200>;
+bindings = <&kp LCTRL &kp LALT>;
 };
 macro_cmd_ctrl_shift: macro_cmd_ctrl_shift {
 compatible = "zmk,behavior-hold-tap";
 label = "macro_cmd_ctrl_shift";
+flavor = "hold-preferred";
 #binding-cells = <0>;
-bindings = <&kp LCMD>, <&kp LCTRL>, <&kp LSHIFT>;
+tapping-term-ms = <200>;
+bindings = <&kp LCMD, &kp LCTRL, &kp LSHIFT>;
 };
 macro_alfredo: macro_alfredo{
 compatible = "zmk,behavior-macro";
