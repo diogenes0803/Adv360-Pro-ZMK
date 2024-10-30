@@ -1,34 +1,34 @@
-macro_ctrl_alt: macro_crtl_alt: {
+macro_ctrl_alt: macro_ctrl_alt{
 compatible = "zmk,behavior-macro";
 label = "macro_ctrl_alt";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LEFT_ALT>, <&macro_release &kp LCTRL>, <&macro_release &kp LEFT_ALT>;
 };
-macro_cmd_ctrl_shift: macro_cmd_ctrl_shift: {
+macro_cmd_ctrl_shift: macro_cmd_ctrl_shift{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_ctrl_shift";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LCMD>, <&macro_press &kp LCTRL>, <&macro_press &kp LSHIFT>, <&macro_release &kp LCMD>, <&macro_release &kp LCTRL>, <&macro_release &kp LSHIFT>;
 };
-macro_alfredo: macro_alfredo {
+macro_alfredo: macro_alfredo{
 compatible = "zmk,behavior-macro";
 label = "macro_alfredo";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LEFT_ALT>, <&macro_tap &kp SPACE>, <&macro_release &kp LEFT_ALT>;
 };
-macro_window_full: macro_window_full {
+macro_window_full: macro_window_full{
 compatible = "zmk,behavior-macro";
 label = "macro_window_full";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LEFT_ALT>, <&macro_tap &kp ENTER>, <&macro_release &kp LEFT_ALT>, <&macro_release &kp LCTRL>;
 };
-macro_window_right: macro_window_right {
+macro_window_right: macro_window_right{
 compatible = "zmk,behavior-macro";
 label = "macro_window_right";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LEFT_CONTROL>, <&macro_press &kp LEFT_ALT>, <&macro_tap &kp RIGHT>, <&macro_release &kp LEFT_ALT>, <&macro_release &kp LEFT_CONTROL>;
 };
-macro_window_left: macro_window_left {
+macro_window_left: macro_window_left{
 compatible = "zmk,behavior-macro";
 label = "macro_window_left";
 #binding-cells = <0>;
